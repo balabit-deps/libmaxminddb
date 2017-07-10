@@ -1,5 +1,6 @@
 name: libmaxminddb 
 builder:
   name: AutotoolsBuilder
+  configure_options: --disable-tests
 platforms:
   - linux-glibc2.11/amd64
