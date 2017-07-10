@@ -1,0 +1,17 @@
+Source: libmaxminddb
+Section: libdevel
+Priority: extra
+Maintainer: syslog-ng developers <syslog-ng@lists.balabit.hu>
+Build-depends: pkg-config
+Standards-Version: 3.6.1
+
+Package: libmaxminddb
+Architecture: amd64
+Depends: ${shlibs:Depends}
+Description: The libmaxminddb library provides a C library for reading MaxMind DB files,
+             including the GeoIP2 databases from MaxMind. 
+
+Package: libmaxminddb-dbg
+Architecture: amd64
+Depends: libmaxminddb
+Description: Debug symbols for libmaxminddb
