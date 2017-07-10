@@ -1,0 +1,5 @@
+name: libmaxminddb 
+builder:
+  name: AutotoolsBuilder
+platforms:
+  - linux-glibc2.11/amd64
