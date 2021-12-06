@@ -1,0 +1,16 @@
+source="libmaxminddb"
+version=1.2.1-pe-1
+
+bootstrap() {
+  ./bootstrap
+}
+
+build() {
+  cd ${build_dir}
+  ${src_dir}/configure --prefix="${prefix}" --disable-tests
+  make
+}
+
+install() {
+  make -C "${build_dir}" DESTDIR="${dest_dir}" install
+}
