@@ -1,0 +1,4 @@
+name: libmaxminddb
+builder:
+  name: AutotoolsBuilder
+  configure_options: --disable-tests
